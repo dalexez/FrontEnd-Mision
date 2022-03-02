@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Pedido</title>
+</head>
+<body>
+    <h1>Aqui se hace el pedido</h1>
+
+    <form action="pedido.js">
+        <label for="Nombre">¿Cual es tu nombre?</label><br>
+        <input type="text" name="Nombre" id="Nombre" placeholder="Tu nombre">
+
+        <br><br>
+
+        <label for="tel">¿Cual es tu telefono?</label><br>
+        <input type="tel" id="tel" name="tel" maxlength="10">
+        
+        <br><br>
+
+        <label for="correo">Correo Electronico</label><br>
+        <input type="email" id="correo" name="correo">
+
+        <br><br>
+
+        <label for="sabores">Elige tu sabor o sabores de pastel</label><br><br>
+        <input type="checkbox" id="sabor1" name="sabor1" value="Vainilla">
+        <label for="sabor1">Vainilla</label><br>
+        <input type="checkbox" id="sabor2" name="sabor1" value="Chocolate">
+        <label for="sabor2">Chocolate</label><br>
+        <input type="checkbox" id="sabor3" name="sabor1" value="Moka">
+        <label for="sabor3">Moka</label><br>
+        <input type="checkbox" id="sabor4" name="sabor1" value="Zanahoria">
+        <label for="sabor4">Zanahoria</label><br>
+        <input type="checkbox" id="sabor5" name="sabor1" value="Tres Leches">
+        <label for="sabor5">Tres Leches</label><br>
+        <input type="checkbox" id="sabor6" name="sabor1" value="Red Velvet">
+        <label for="sabor6">Red Velvet</label><br><br>
+
+
+        <label for="decoracion">Elige tu decoracion</label><br><br>
+        <input type="checkbox" id="decoracion1" name="decoracion1" value="Figuras de fondant">
+        <label for="sabor1">Figuras de fondant</label><br>
+        <input type="checkbox" id="decoracion2" name="decoracion2" value="Letras de chantilli">
+        <label for="sabor2">Letras de chantilli</label><br>
+        <input type="checkbox" id="decoracion3" name="decoracion13" value="Fruta en almibar">
+        <label for="sabor3">Fruta en almibar</label><br>
+        <input type="checkbox" id="decoracion4" name="decoracion4" value="Velas de numeros">
+        <label for="sabor4">Velas de numeros</label><br><br>
+
+        <label for="descripcion">Descripcion de tu pastel</label><br>
+        <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+
+        <br><br>
+
+        <input type="reset">
+        <input type="submit">
+
+    </form>
+
+</body>
+</html>
