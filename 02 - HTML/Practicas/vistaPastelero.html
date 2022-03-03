@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        a { color: #d84051; } /* CSS link color */
+
+        header {
+            background-color: rgba(185,255,252,255); 
+            padding: 25px;
+            text-align: center;
+            font-size: 20px;
+            color: rgb(246, 91, 91);
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            font-size: 25px;
+            width: 30%;
+            height: 500px;
+            /* only for demonstration, should be removed */
+            background: rgba(255,197,203,255);
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 20px;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            text-align: center;
+            width: 70%;
+            background-color: white;
+            height: 500px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+        
+            background-color: #ffcb85;
+            padding: 10px;
+            text-align: center;
+            font-size: 10;
+            color: black;
+            
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+    <img src="./assets/img/pasteleria2.png" alt="logo pasteleria" width="165">
+    </center>
+
+    <header>
+    <h1>¡Hola! ¿Que vamos a hornear hoy?</h1>
+    </header>
+    <section>
+    
+        <nav>
+            <ul>
+                <li><a href="./inventario.html">Inventario</a></li><br>
+                <li><a href="./nuevosPedidos.html">Nuevos Pedidos</a></li><br>
+                <li><a href="./vistaPastelero.html">Home</a></li><br>
+                <li><a href="./home.html">Salir</a></li><br>
+            </ul>
+        </nav>
+
+    
+    <article>
+    
+        <img src="./assets/img/pasteleria2.png" alt="logo pasteleria" width="300">
+
+    </article>
+
+    <footer>
+        <p>Molino de Parras #127 </p>
+        <p>Tel: 4495145262</p>
+        <p>Horarios de atencion: L-S 10 am a 6 pm</p>
+    </footer>
+
+</body>
+</html>
