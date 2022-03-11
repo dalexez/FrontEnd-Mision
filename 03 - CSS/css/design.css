@@ -1,0 +1,46 @@
+/* *{
+    box-sizing: border-box;
+} */
+
+div{
+    width: 100%;
+    height: 100px;
+    background: red;
+}
+
+.rectangulo1{
+    width: 50%;
+    height: 500px;
+    background: orange;
+}
+
+.rectangulo2{
+    width: 50%;
+    height: 500px;
+    background: green;
+}
+
+.rectangulo3{
+    position: absolute;
+    top: 10px; left: px;
+    width: 100%;
+    height: 200px;
+    background: pink;
+}
+
+.rectangulo4{
+    position: absolute;
+    top: 400px; left:20%;
+    width: 60%;
+    height: 100px;
+    background: gray;
+}
+
+.contenedor1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: blue;
+}
