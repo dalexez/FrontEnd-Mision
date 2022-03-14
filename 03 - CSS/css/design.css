@@ -3,37 +3,50 @@
 } */
 
 div{
+    display: block;
     width: 100%;
     height: 100px;
     background: red;
 }
 
 .rectangulo1{
+    display:flex;
+    flex-direction: column;
     width: 50%;
-    height: 500px;
-    background: orange;
+    height: 750px;
+    background: white;
 }
 
 .rectangulo2{
     width: 50%;
-    height: 500px;
-    background: url(./images/doctor.png);
+    height: 750px;
+    background: url(./images/doctor.png), linear-gradient(to left top, #0899e6, #375fda);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-.rectangulo3{
+.contenedorNavMenu{
     position: absolute;
-    top: 10px; left: px;
     width: 100%;
-    height: 200px;
-    background: pink;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.8);
+
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    
 }
 
-.rectangulo4{
+.schedule{
+    display: flex;
+    flex-direction: row;
     position: absolute;
-    top: 400px; left:20%;
+    top: 600px; left:15%;
     width: 60%;
     height: 100px;
-    background: gray;
+    background: rgba(255, 255, 255, 0.8);
 }
 
 .contenedor1{
@@ -43,4 +56,71 @@ div{
     height: 100%;
     position: relative;
     background: blue;
+}
+
+.barraNavegacion{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 5%;
+    list-style: none;
+}
+
+.vaccination{
+    margin-left: 10%;
+    color: #2c4cca;
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 1.8em;
+    text-decoration: none;
+}
+
+.elementosNav{
+  color: #6d7b93;
+  font-weight: bold;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1.5em;
+  padding: .5em;
+  text-decoration: none;
+}
+
+.botonNav{
+    background-color: #2c4cca;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 10px 10px rgb(0 0 0 / 30%);
+    color: white;
+    cursor: pointer;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.titulo{
+    color: #1f3e72;
+    font-weight: bold;
+    font-size: 52px;
+    padding-top: 20%;
+    padding-left: 20%;
+    padding-right: 20%;
+   
+}
+
+.textoTitulo{
+    color: #6d7b93;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.location{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    background: rgba(255, 255, 255, 0.8);
 }
