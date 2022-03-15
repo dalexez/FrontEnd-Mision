@@ -5,8 +5,8 @@
 div{
     display: block;
     width: 100%;
-    height: 100px;
-    background: red;
+    height: 200px;
+    background: white;
 }
 
 .rectangulo1{
@@ -49,13 +49,13 @@ div{
     background: rgba(255, 255, 255, 0.8);
 }
 
-.contenedor1{
+.contenedor{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
     position: relative;
-    background: blue;
+    background: white;
 }
 
 .barraNavegacion{
@@ -117,10 +117,112 @@ div{
     margin-right: 20%;
 }
 
-.location{
+.scheduleItems{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
+    height: 100px;
     background: rgba(255, 255, 255, 0.8);
+}
+
+.vaccines{
+    background: url(./images/vacunas.jpg);
+}
+
+.whyVaccine{
+    width: 50%;
+    height: 400px;
+    background: white;
+  }
+
+.whyVaccine h2{
+    color: #1F3E72;
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin: 100px 100px;
+}
+
+.whyVaccine p{
+    color: #6d7b93;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin: 100px;
+}
+
+.vaccineBenefits{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 100%;
+    height: 100%;
+}
+
+.vaccineBenefits ul{
+    border: solid 3px rgba(109, 123, 147, 0.2);
+    border-radius: 10px;
+    height: 280px;
+    list-style: none;
+    padding: 2.5%;
+    width: 24%;
+}
+
+.vaccineBenefits h4{
+    color: #1F3E72;
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.vaccineBenefits p{
+    color: #6d7b93;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.beforVaccineImg{
+    display: flex;
+    width: 50%;
+    height: 750px;
+    background: url(./images/paciente.jpg);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.beforeVaccine{
+    display: flex;
+    width: 50%;
+}
+
+.beforeVaccine p{
+    color: #6d7b93;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.beforeVaccine h2{
+    color: #1F3E72;
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin: 0.5em 0;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.beforeVaccine ul{
+    list-style: none;
 }
